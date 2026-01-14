@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spatial Mapping for Infrastructure Opportunities</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Spatial Mapping for Infrastructure Opportunities</h1>
+    <p>Sustainable Development • Environmental Intelligence • Infrastructure Planning</p>
+  </header>
+
+  <div id="controls">
+    <input type="text" id="searchInput" placeholder="Search exact location (city, barangay, coordinates)"/>
+    <button onclick="searchLocation()">Search</button>
+  </div>
+
+  <main>
+    <div id="map"></div>
+
+    <aside id="infoPanel">
+      <h2>Location Intelligence</h2>
+      <div id="locationInfo">
+        <p>Select a location on the map.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Research Prototype • Spatial Mapping & Computational Sciences</p>
+  </footer>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Main Script -->
+  <script src="main.js"></script>
+</body>
+</html>
